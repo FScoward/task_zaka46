@@ -52,7 +52,7 @@ config :phoenix, :stacktrace_depth, 20
 config :task_zaka46, TaskZaka46.Repo,
   adapter: Ecto.Adapters.MySQL,
   username: "root",
-  password: "",
+  password: "mysql",
   database: "task_zaka46_dev",
   hostname: "localhost",
   pool_size: 10
