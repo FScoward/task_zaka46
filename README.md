@@ -18,3 +18,9 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+## docker
+
+```
+docker run --name task_zaka46_mysql -e MYSQL_ROOT_PASSWORD=mysql -d -p 3306:3306 task_zaka46_mysql
+```
