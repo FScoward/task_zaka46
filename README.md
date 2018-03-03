@@ -25,3 +25,10 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 $ docker build -t task_zaka46_mysql .
 $ docker run --name task_zaka46_mysql -e MYSQL_ROOT_PASSWORD=mysql -d -p 3306:3306 task_zaka46_mysql
 ```
+
+## migration
+
+```
+$ mix phx.gen.schema Accounts.Credential credentials email:string:unique user_id:references:users
+mix phx.gen.schema Accounts.User users user_id:integer
+```
