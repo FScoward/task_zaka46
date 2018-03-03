@@ -22,5 +22,6 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 ## docker
 
 ```
-docker run --name task_zaka46_mysql -e MYSQL_ROOT_PASSWORD=mysql -d -p 3306:3306 task_zaka46_mysql
+$ docker build -t task_zaka46_mysql .
+$ docker run --name task_zaka46_mysql -e MYSQL_ROOT_PASSWORD=mysql -d -p 3306:3306 task_zaka46_mysql
 ```
